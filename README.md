@@ -50,6 +50,14 @@ https://docs.github.com/en/repositories/releasing-projects-on-github/managing-re
 
 If publish fails (403) ensure https://github.com/users/USERNAME/packages/npm/REPONAME/settings that repo is connected and has write access
 
+REMEMBER:
+
+add .npmrc file to consuming project at the same directory as package.json:
+```
+@watersilver:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=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
+```
+
 ### 2st way
 
 create .npmrc in user profile C:/Users/USERNAME
