@@ -55,7 +55,7 @@ REMEMBER:
 add .npmrc file to consuming project at the same directory as package.json:
 ```
 @watersilver:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=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
+//npm.pkg.github.com/:_authToken=ACCESS_TOKEN
 ```
 
 ### 2st way
