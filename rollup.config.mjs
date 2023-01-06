@@ -27,8 +27,6 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      // terser might have a sourcemap issue, check here to see if fixed:
-      // https://github.com/rollup/plugins
       terser(),
     ],
     // external: ["external-modules"]
