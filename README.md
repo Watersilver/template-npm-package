@@ -11,20 +11,20 @@ Can duplicate module in both devDependencies and peerDependencies
 to both install locally and not include in bundle.
 
 
-for css:
+### for css:
 
 look for rollup-plugin-postcss rollup plugin
 
 
-for react:
-
+### for react:
+```
 npm install react @types/react
 
 npm install @testing-library/react --save-dev
+```
+also look into jest-environment-jsdom for testing
 
-// also look into jest-environment-jsdom for testing
-
-for storybook:
+### for storybook:
 
 - storybook with react and react-dom peer dependencies
 we're already mentioned but I wanted to mention my
@@ -45,16 +45,25 @@ REMEMBER TO MOVE REACT TO peerDependencies
 
 ## Publishing
 
-create .npmrc in user profile C:/Users/USERNAME
+### 1st way
 
+create .npmrc in user profile C:/Users/USERNAME
 
 append:
 
+```
 registry=https://registry.npmjs.org/
 
 @YOUR_GITHUB_USERNAME:registry=https://npm.pkg.github.com/
 
 //npm.pkg.github.com/:_authToken=YOUR_AUTH_TOKEN
-
+```
 
 (fill in username and get your token from github)
+
+```
+npm publish
+```
+
+### 2nd way
+
