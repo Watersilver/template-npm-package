@@ -7,6 +7,8 @@ Can duplicate module in both devDependencies and peerDependencies
 
 to both install locally and not include in bundle.
 
+REMEMBER: always check if dependencies are up to date.
+
 
 ### for css:
 
