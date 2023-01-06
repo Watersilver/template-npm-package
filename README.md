@@ -1,9 +1,6 @@
 # Better instructions for what's going on and how to publish:
 https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe
 
-# official github instructions for publishing:
-https://docs.github.com/en/packages/quickstart
-
 ## Notes
 
 Can duplicate module in both devDependencies and peerDependencies
@@ -45,7 +42,15 @@ REMEMBER TO MOVE REACT TO peerDependencies
 
 ## Publishing
 
-### 1st way
+### 1nd way
+
+https://docs.github.com/en/packages/quickstart
+
+https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release
+
+If publish fails (403) ensure https://github.com/users/USERNAME/packages/npm/REPONAME/settings that repo is connected and has write access
+
+### 2st way
 
 create .npmrc in user profile C:/Users/USERNAME
 
@@ -64,6 +69,3 @@ registry=https://registry.npmjs.org/
 ```
 npm publish
 ```
-
-### 2nd way
-
